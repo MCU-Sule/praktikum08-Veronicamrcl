@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Veronica Marcella Angela Simalngo 2172042">
+    <title>Soal 3</title>
+    <style>
+        body {
+            margin: 0px;
+            text-align: center;
+        }
+        div {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a = prompt ("besar angka")
+        let b = Math.floor(Math.random()*255)
+        let c = Math.floor(Math.random()*255)
+        let d = Math.floor(Math.random()*255)
+        let e
+
+        for (let i=0; i<a; i++){
+            for (let j=1; j<=i; j++)
+            {
+            e=100/i
+            document.write ("<div style='width:"+ e +"%; background-color:rgb("+ b +"," + c +","+ d +");'>"+j+"</div>");
+            b = Math.floor(Math.random()*255)
+            c = Math.floor(Math.random()*255)
+            d = Math.floor(Math.random()*255)
+            }
+        }
+            </script>
+</body>
+</html>
